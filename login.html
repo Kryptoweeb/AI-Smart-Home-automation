@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AIVA: Your nature-friendly smart home assistant">
+  <title>AIVA - Smart Home Assistant</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="animated-header">
+    <img src="AIVA.png" alt="AIVA Logo" class="logo animated-logo">
+    <div class="welcome">
+      <h1 class="fade-in">Meet AIVA</h1>
+      <p class="fade-in delay-1">Your Nature-Friendly Smart Home Companion 🌿🏠</p>
+    </div>
+    <div class="header-controls">
+      <select id="language" aria-label="Select Language">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="es">Spanish</option>
+      </select>
+      <button id="theme-toggle" aria-label="Toggle theme" class="theme-btn">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="primary-actions">
+      <a href="chat.html" class="btn guest-btn animated-btn">Try Chatting</a>
+      <button class="btn login-btn animated-btn">Login / Sign Up</button>
+      <div class="social-login">
+        <button class="btn social-btn animated-btn">Continue with Google</button>
+        <button class="btn social-btn animated-btn">Continue with Facebook</button>
+      </div>
+    </section>
+
+    <section class="feature-cards">
+      <h2 class="fade-in">Why AIVA?</h2>
+      <div class="cards-grid">
+        <div class="card animated-card">
+          <span class="icon">💡</span>
+          <h3>Light Control</h3>
+          <p>Dim, brighten, or schedule lights effortlessly.</p>
+        </div>
+        <div class="card animated-card">
+          <span class="icon">🔒</span>
+          <h3>Smart Locks</h3>
+          <p>Secure your home with voice or app control.</p>
+        </div>
+        <div class="card animated-card">
+          <span class="icon">🌡️</span>
+          <h3>Temperature</h3>
+          <p>Stay cozy with smart climate adjustments.</p>
+        </div>
+        <div class="card animated-card">
+          <span class="icon">📹</span>
+          <h3>Security</h3>
+          <p>Monitor your home in real-time, anywhere.</p>
+        </div>
+        <div class="card animated-card">
+          <span class="icon">🎵</span>
+          <h3>Entertainment</h3>
+          <p>Control music and media seamlessly.</p>
+        </div>
+        <div class="card animated-card">
+          <span class="icon">🧠</span>
+          <h3>AI Recommendations</h3>
+          <p>Get tips to optimize your smart home.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="theme-selector">
+      <h2 class="fade-in">Smart Room Themes</h2>
+      <div class="themes-grid">
+        <div class="theme-card animated-card" data-theme="Eco Mode">
+          <h3>Eco Mode</h3>
+          <p>Energy-saving lights and cooling.</p>
+        </div>
+        <div class="theme-card animated-card" data-theme="Sleep Mode">
+          <h3>Sleep Mode</h3>
+          <p>Soft lights, quiet ambiance.</p>
+        </div>
+        <div class="theme-card animated-card" data-theme="Party Mode">
+          <h3>Party Mode</h3>
+          <p>Sync music and colors!</p>
+        </div>
+        <div class="theme-card animated-card" data-theme="Work Mode">
+          <h3>Work Mode</h3>
+          <p>Boost productivity.</p>
+        </div>
+      </div>
+      <div class="theme-preview" id="theme-preview"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="accessibility fade-in">
+      <button id="font-increase" aria-label="Increase font size">+</button>
+      <span id="font-size">Font Size: 16px</span>
+      <button id="font-decrease" aria-label="Decrease font size">−</button>
+    </div>
+    <div class="links">
+      <a href="#tos">Terms of Service</a>
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="faq-snippet">
+      <details>
+        <summary>What can AIVA do?</summary>
+        <p>AIVA controls lights, locks, climate, security, and entertainment!</p>
+      </details>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>

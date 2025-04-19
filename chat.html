@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AIVA: Chat with your smart home assistant">
+  <title>AIVA - Chat</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header fade-in">
+      <img src="AIVA.png" alt="AIVA Avatar" class="avatar">
+      <h2>Chat with AIVA</h2>
+      <p class="fade-in delay-1">Control your smart home with voice or text!</p>
+    </div>
+    <div class="chat-window" id="chat-window">
+      <div class="message aiva fade-in"><strong>AIVA:</strong> Hi! How can I help with your smart home today?</div>
+    </div>
+    <div class="chat-input fade-in delay-2">
+      <input type="text" id="user-input" placeholder="Type your message..." aria-label="Chat input">
+      <button class="send-btn" id="send-btn">Send</button>
+      <button class="voice-btn" id="voice-btn" aria-label="Toggle voice input">🎤</button>
+    </div>
+    <a href="login.html" class="back-btn">Back to Home</a>
+  </div>
+  <script src="chat-script.js"></script>
+</body>
+</html>
